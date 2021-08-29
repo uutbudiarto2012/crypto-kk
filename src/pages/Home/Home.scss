@@ -1,0 +1,54 @@
+.page{
+  .topNavbar{
+    height: 70px;
+  }
+}
+.mainWrapper{
+  display: flex;
+  height: 100vh;
+  .contentWrapper{
+    flex: 1;
+    overflow: auto;
+    background-color: var(--bg-light);
+    .topNavbar{
+      height: 70px;
+      position: sticky;
+      top: 0;
+      background-color: var(--white);
+      border-bottom: 1px solid rgba(100, 24, 195, 0.1);
+    }
+  }
+}
+
+.myCard{
+  padding: 30px;
+  @media (max-width : 768px) {
+    padding: 10px;
+  }
+  background-color: var(--white);
+  border-radius: 16px;
+}
+
+.projectItem{
+    .appInfo{
+      margin-top: 10px;
+      .appname{
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .appDesc{
+        font-size: 14px;
+        font-weight: 400;
+      }
+      @media (max-width: 576px) {
+        .appname{
+          font-size: 12px;
+          font-weight: 400;
+        }
+        .appDesc{
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+}

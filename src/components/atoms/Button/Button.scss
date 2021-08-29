@@ -1,0 +1,44 @@
+.myBtn {
+  height: 56px;
+  padding: 0 15px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 12px;
+  span {
+    color: var(--text-normal);
+    font-size: 16;
+    font-weight: 700;
+  }
+  @media (max-width: 768px) {
+    height: 45px;
+    padding: 0 10px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &.orange {
+    background-color: var(--orange);
+    span {
+      color: var(--white);
+      font-size: 16px;
+    }
+  }
+  &.light-orange {
+    background-color: rgba($color: #f56b3f, $alpha: 0.3);
+    span {
+      color: var(--orange);
+      font-size: 16px;
+    }
+  }
+  &.purple {
+    background-color: var(--purple);
+    span {
+      color: var(--white);
+      font-size: 16px;
+    }
+  }
+}
